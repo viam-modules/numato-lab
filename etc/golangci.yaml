@@ -45,7 +45,9 @@ linters:
     - nonamedreturns
     - nosprintfhostport
     - paralleltest
+    - perfsprint
     - prealloc
+    - predeclared
     - scopelint
     - structcheck
     - tagliatelle

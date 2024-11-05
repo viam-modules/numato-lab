@@ -1,4 +1,4 @@
-module MODULE
+module numato-lab
 
 go 1.23.0
 
@@ -8,8 +8,12 @@ require (
 	github.com/edaniels/golinters v0.0.5-0.20220906153528-641155550742
 	github.com/fullstorydev/grpcurl v1.8.6
 	github.com/golangci/golangci-lint v1.61.0
+	github.com/jacobsa/go-serial v0.0.0-20180131005756-15cf729a72d4
 	github.com/rhysd/actionlint v1.6.24
+	go.uber.org/multierr v1.11.0
+	go.viam.com/api v0.1.350
 	go.viam.com/rdk v0.48.2
+	go.viam.com/test v1.1.1-0.20220913152726-5da9916c08a2
 	go.viam.com/utils v0.1.110
 	gotest.tools/gotestsum v1.10.0
 )
@@ -44,6 +48,7 @@ require (
 	github.com/alingse/asasalint v0.0.11 // indirect
 	github.com/ashanbrown/forbidigo v1.6.0 // indirect
 	github.com/ashanbrown/makezero v1.1.1 // indirect
+	github.com/benbjohnson/clock v1.3.5 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bep/debounce v1.2.1 // indirect
 	github.com/bkielbasa/cyclop v1.2.1 // indirect
@@ -285,10 +290,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.29.0 // indirect
 	go.uber.org/automaxprocs v1.5.3 // indirect
 	go.uber.org/goleak v1.3.0 // indirect
-	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	go.viam.com/api v0.1.350 // indirect
-	go.viam.com/test v1.1.1-0.20220913152726-5da9916c08a2 // indirect
 	golang.org/x/crypto v0.28.0 // indirect
 	golang.org/x/exp v0.0.0-20240904232852-e7e105dedf7e // indirect
 	golang.org/x/exp/typeparams v0.0.0-20240314144324-c7f7c6466f7f // indirect
@@ -315,6 +317,7 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	honnef.co/go/tools v0.5.1 // indirect
+	howett.net/plist v1.0.0 // indirect
 	mvdan.cc/gofumpt v0.7.0 // indirect
 	mvdan.cc/unparam v0.0.0-20240528143540-8a5130ca722f // indirect
 	nhooyr.io/websocket v1.8.7 // indirect
