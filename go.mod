@@ -1,4 +1,4 @@
-module numato-lab
+module github.com/viam-modules/numato-lab
 
 go 1.23.0
 
