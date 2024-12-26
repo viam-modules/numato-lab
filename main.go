@@ -4,7 +4,7 @@ package main
 import (
 	"context"
 
-	"numato-lab/usbgpio"
+	"github.com/viam-modules/numato-lab/usbgpio"
 
 	"go.viam.com/rdk/components/board"
 	"go.viam.com/rdk/logging"
