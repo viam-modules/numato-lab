@@ -11,7 +11,7 @@ require (
 	github.com/jacobsa/go-serial v0.0.0-20180131005756-15cf729a72d4
 	github.com/rhysd/actionlint v1.6.24
 	go.uber.org/multierr v1.11.0
-	go.viam.com/api v0.1.377
+	go.viam.com/api v0.1.378
 	go.viam.com/rdk v0.55.1
 	go.viam.com/test v1.2.4
 	go.viam.com/utils v0.1.116
