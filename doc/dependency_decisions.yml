@@ -229,3 +229,31 @@
     :why: pulled in transitively via go.viam.com/rdk; MPL-2.0 is compatible with our distribution
     :versions: []
     :when: 2026-07-15 00:00:00.000000000 Z
+- - :license
+  - github.com/hashicorp/go-getter
+  - Mozilla Public License 2.0
+  - :who:
+    :why: license_finder cannot auto-detect the license; declared explicitly
+    :versions: []
+    :when: 2026-07-15 00:00:00.000000000 Z
+- - :license
+  - github.com/hashicorp/go-version
+  - Mozilla Public License 2.0
+  - :who:
+    :why: license_finder cannot auto-detect the license; declared explicitly
+    :versions: []
+    :when: 2026-07-15 00:00:00.000000000 Z
+- - :license
+  - codeberg.org/go-fonts/liberation
+  - New BSD
+  - :who:
+    :why: license_finder cannot auto-detect the codeberg-hosted license; declared explicitly
+    :versions: []
+    :when: 2026-07-15 00:00:00.000000000 Z
+- - :license
+  - codeberg.org/go-latex/latex
+  - New BSD
+  - :who:
+    :why: license_finder cannot auto-detect the codeberg-hosted license; declared explicitly
+    :versions: []
+    :when: 2026-07-15 00:00:00.000000000 Z
