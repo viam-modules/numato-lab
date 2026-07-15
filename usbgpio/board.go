@@ -61,17 +61,17 @@ func init() {
 }
 
 // Validate ensures all parts of the config are valid.
-func (conf *Config) Validate(path string) ([]string, error) {
+func (conf *Config) Validate(path string) ([]string, []string, error) {
 	if conf.Pins <= 0 {
-		return nil, utils.NewConfigValidationFieldRequiredError(path, "pins")
+		return nil, nil, utils.NewConfigValidationFieldRequiredError(path, "pins")
 	}
 
 	for idx, conf := range conf.Analogs {
 		if err := conf.Validate(fmt.Sprintf("%s.%s.%d", path, "analogs", idx)); err != nil {
-			return nil, err
+			return nil, nil, err
 		}
 	}
-	return nil, nil
+	return nil, nil, nil
 }
 
 type mask []byte
@@ -321,7 +321,7 @@ func (gp *gpioPin) SetPWMFreq(ctx context.Context, freqHz uint, extra map[string
 	return errors.New("numato doesn't support pwm")
 }
 
-func (b *numatoBoard) SetPowerMode(ctx context.Context, mode pb.PowerMode, duration *time.Duration) error {
+func (b *numatoBoard) SetPowerMode(ctx context.Context, mode pb.PowerMode, duration *time.Duration, extra map[string]interface{}) error {
 	return grpc.UnimplementedError
 }
 
