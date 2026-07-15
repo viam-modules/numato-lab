@@ -407,30 +407,30 @@ func connect(ctx context.Context, name resource.Name, conf *Config, logger loggi
 	}
 
 	// Find the max analog voltage and stepSize based on the productID.
-	var max float32
+	var maxVoltage float32
 	var stepSize float32
 	switch productID {
 	case 0x800:
 		// 8 and 16 pin usb versions have the same product ID but different voltage ranges
 		// both have 10 bit resolution
 		if conf.Pins == 8 {
-			max = 5.0
+			maxVoltage = 5.0
 		} else if conf.Pins == 16 {
-			max = 3.3
+			maxVoltage = 3.3
 		}
-		stepSize = max / 1024
+		stepSize = maxVoltage / 1024
 	case 0x802:
 		// 32 channel usb numato has 10 bit resolution
-		max = 3.3
-		stepSize = max / 1024
+		maxVoltage = 3.3
+		stepSize = maxVoltage / 1024
 	case 0x805:
 		// 128 channel usb numato has 12 bit resolution
-		max = 3.3
-		stepSize = max / 4096
+		maxVoltage = 3.3
+		stepSize = maxVoltage / 4096
 	case 0xC05:
 		// 1 channel usb relay module numato - 10 bit resolution
-		max = 5.0
-		stepSize = max / 1024
+		maxVoltage = 5.0
+		stepSize = maxVoltage / 1024
 	default:
 		logger.Warnf("analog range and step size are not supported for numato with product id %d", productID)
 	}
@@ -452,7 +452,7 @@ func connect(ctx context.Context, name resource.Name, conf *Config, logger loggi
 		pins:             pins,
 		port:             device,
 		logger:           logger,
-		maxAnalogVoltage: max,
+		maxAnalogVoltage: maxVoltage,
 		stepSize:         stepSize,
 	}
 

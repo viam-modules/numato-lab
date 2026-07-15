@@ -223,3 +223,9 @@
     :why:
     :versions: []
     :when: 2024-12-03 20:21:04.946556000 Z
+- - :permit
+  - Mozilla Public License 2.0
+  - :who:
+    :why: pulled in transitively via go.viam.com/rdk; MPL-2.0 is compatible with our distribution
+    :versions: []
+    :when: 2026-07-15 00:00:00.000000000 Z
