@@ -11,10 +11,10 @@ require (
 	github.com/jacobsa/go-serial v0.0.0-20180131005756-15cf729a72d4
 	github.com/rhysd/actionlint v1.7.8
 	go.uber.org/multierr v1.11.0
-	go.viam.com/api v0.1.588
-	go.viam.com/rdk v1.10.0
+	go.viam.com/api v0.1.590
+	go.viam.com/rdk v1.11.0
 	go.viam.com/test v1.2.5
-	go.viam.com/utils v0.13.0
+	go.viam.com/utils v0.13.2
 	gotest.tools/gotestsum v1.12.2
 )
 
