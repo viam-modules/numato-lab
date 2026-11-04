@@ -12,7 +12,7 @@ require (
 	github.com/rhysd/actionlint v1.7.8
 	go.uber.org/multierr v1.11.0
 	go.viam.com/api v0.1.603
-	go.viam.com/rdk v1.14.0
+	go.viam.com/rdk v1.15.0
 	go.viam.com/test v1.2.5
 	go.viam.com/utils v0.16.1
 	gotest.tools/gotestsum v1.12.2
@@ -152,7 +152,7 @@ require (
 	github.com/ghostiam/protogetter v0.3.20 // indirect
 	github.com/go-critic/go-critic v0.14.3 // indirect
 	github.com/go-gl/mathgl v1.0.0 // indirect
-	github.com/go-jose/go-jose/v4 v4.1.4 // indirect
+	github.com/go-jose/go-jose/v4 v4.1.6 // indirect
 	github.com/go-logr/logr v1.4.4 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-toolsmith/astcast v1.1.0 // indirect
